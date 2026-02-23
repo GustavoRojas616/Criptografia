@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografía — Selected Topics in Cryptography</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Scanlines overlay -->
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-crypto">Criptografía</span>
+                <span class="brand-sep">//</span>
+                <span class="brand-sub">Selected Topics in Cryptography</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <i class="ph ph-list"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero"><i class="ph ph-house-simple"></i><span>Inicio</span></a></li>
+                <li><a href="#formacion"><i class="ph ph-graduation-cap"></i><span>Formación</span></a></li>
+                <li><a href="#hobbies"><i class="ph ph-guitar"></i><span>Hobbies</span></a></li>
+                <li><a href="#criptografia"><i class="ph ph-lock-key"></i><span>Cripto</span></a></li>
+                <li><a href="#cv"><i class="ph ph-file-text"></i><span>CV</span></a></li>
+                <li><a href="#llave"><i class="ph ph-key"></i><span>Llave pública</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+
+        <div class="hero-layout">
+            <!-- Left col -->
+            <div class="hero-left">
+                <p class="hero-cipher" id="cipherText" aria-hidden="true">01000111 01010101 01000001</p>
+                <h1 class="hero-name">
+                    <span class="hero-name-first" id="heroNameFirst">Gustavo Adolfo</span>
+                    <span class="hero-name-last glitch" data-text="Arreola Rojas">Arreola Rojas</span>
+                </h1>
+
+                <div class="hero-meta">
+                    <span class="meta-chip"><i class="ph ph-map-pin-simple-area"></i> ESCOM · IPN · CDMX</span>
+                    <span class="meta-chip accent-green"><i class="ph ph-terminal-window"></i> Ingeniería en Sistemas
+                        Computacionales</span>
+                </div>
+
+                <p class="hero-email-line">
+                    <i class="ph ph-paper-plane-tilt"></i>
+                    <a href="mailto:gustavoarreolar@gmail.com">gustavoarreolar@gmail.com</a>
+                </p>
+
+                <div class="hero-btns">
+                    <a href="https://www.facebook.com/gustavo.rojas.94043626" target="_blank" class="btn-social fb">
+                        <i class="ph ph-facebook-logo"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/gustavo_rojas666/" target="_blank" class="btn-social ig">
+                        <i class="ph ph-instagram-logo"></i>
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">6</span>
+                        <span class="stat-lbl">instituciones</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">1</span>
+                        <span class="stat-lbl">intercambio intl.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right col: photo -->
+            <div class="hero-right">
+                <div class="photo-frame">
+                    <div class="photo-corner tl"></div>
+                    <div class="photo-corner tr"></div>
+                    <div class="photo-corner bl"></div>
+                    <div class="photo-corner br"></div>
+                    <img src="Media/Fotografía YO.jpeg" alt="Gustavo Adolfo Arreola Rojas" />
+                    <div class="photo-scan" aria-hidden="true"></div>
+                </div>
+                <p class="photo-label"><i class="ph ph-fingerprint-simple"></i> ID verificado · 2025</p>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       FORMACIÓN ACADÉMICA
+  ══════════════════════════════ -->
+    <section id="formacion" class="section">
+        <div class="container">
+            <header class="s-header">
+                <div class="s-tag"><i class="ph ph-graduation-cap-fill"></i> Trayectoria</div>
+                <h2>Formación <em>Académica</em></h2>
+            </header>
+
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-year">2006–2012</div>
+                    <div class="tl-connector">
+                        <div class="tl-node"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-badge">Primaria</div>
+                        <h3>Adolfo Ruiz Cortines, Tecamachalco, Edo. Mex.</h3>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-year">2012–2015</div>
+                    <div class="tl-connector">
+                        <div class="tl-node"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-badge">Secundaria</div>
+                        <h3>Emiliano Zapata, San Sebastian, Edo. Mex.</h3>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-year">2015–2016</div>
+                    <div class="tl-connector">
+                        <div class="tl-node"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-badge">Bachillerato</div>
+                        <h3>CECyT No. 1 <q>Gonzalo Vázquez Vela</q>, CDMX</h3>
+                        <p>Centro de Estudios Científicos y Tecnológicos</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-year">2017–2019</div>
+                    <div class="tl-connector">
+                        <div class="tl-node"></div>
+                    </div>
+                    <div class="tl-card">
+                        <div class="tl-badge">Bachillerato</div>
+                        <h3>Colegio de Bachilleres No. 12 <q>Nezahualcóyotl</q>, Edo. Mex.</h3>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal tl-featured">
+                    <div class="tl-year tl-year--live">2021–<span class="blink">HOY</span></div>
+                    <div class="tl-connector">
+                        <div class="tl-node tl-node--live"></div>
+                    </div>
+                    <div class="tl-card tl-card--live">
+                        <div class="tl-badge tl-badge--green">Ingeniería · EN CURSO</div>
+                        <h3>Escuela Superior de Cómputo</h3>
+                        <p>Instituto Politécnico Nacional · Ingeniería en Sistemas Computacionales</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal tl-featured">
+                    <div class="tl-year">2024–2025</div>
+                    <div class="tl-connector">
+                        <div class="tl-node tl-node--gold"></div>
+                    </div>
+                    <div class="tl-card tl-card--gold">
+                        <div class="tl-badge tl-badge--gold"><i class="ph ph-airplane-tilt"></i> Intercambio · Polonia
+                            🇵🇱</div>
+                        <h3>AGH University of Krakow</h3>
+                        <p>Kraków, Polonia — Estancia internacional</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       HOBBIES
+  ══════════════════════════════ -->
+    <section id="hobbies" class="section section-alt">
+        <div class="container">
+            <header class="s-header">
+                <div class="s-tag"><i class="ph ph-smiley-sticker-fill"></i> Lo que hago</div>
+                <h2>Mis <em>Hobbies</em></h2>
+            </header>
+
+            <div class="hobbies-grid">
+
+                <article class="hobby-card reveal">
+                    <div class="hcard-img">
+                        <img src="Media/Conocer lugares.webp" alt="Bioparque Estrella México" loading="lazy" />
+                        <div class="hcard-img-overlay"></div>
+                        <span class="hcard-loc"><i class="ph ph-map-pin"></i> Bioparque Estrella, CDMX</span>
+                    </div>
+                    <div class="hcard-body">
+                        <h3><i class="ph ph-compass-rose"></i> Conocer Lugares</h3>
+                        <p>No me quedo quieto. Esa foto es del <strong>Bioparque Estrella</strong>: te subes a una
+                            lancha rodeado de árboles enormes que parecen salidos de Miyazaki. Ideal para despejar la
+                            cabeza después de debuggear por cuatro horas seguidas.</p>
+                    </div>
+                </article>
+
+                <article class="hobby-card reveal">
+                    <div class="hcard-img">
+                        <img src="Media/Ir a conciertos.png" alt="Ghost World Tour 2025" loading="lazy" />
+                        <div class="hcard-img-overlay"></div>
+                        <span class="hcard-loc"><i class="ph ph-music-notes"></i> Palacio de los Deportes, CDMX</span>
+                    </div>
+                    <div class="hcard-body">
+                        <h3><i class="ph ph-guitar"></i> Ir a Conciertos</h3>
+                        <p>Ya están los boletos para el <strong>Ghost World Tour 2025</strong>: sección C4, fila P,
+                            asiento 19. La producción teatral de Ghost es de otro nivel — media misa, media concierto de
+                            metal, 100% experiencia que ningún stream replica.</p>
+                    </div>
+                </article>
+
+                <article class="hobby-card reveal">
+                    <div class="hcard-img">
+                        <img src="Media/Ir a conferencias.jpeg" alt="AWS Community Day México" loading="lazy" />
+                        <div class="hcard-img-overlay"></div>
+                        <span class="hcard-loc"><i class="ph ph-buildings"></i> Expo Bancomer, CDMX</span>
+                    </div>
+                    <div class="hcard-body">
+                        <h3><i class="ph ph-microphone-stage"></i> Ir a Conferencias</h3>
+                        <p>El <strong>AWS Community Day México 2024</strong> fue una pasada. Llegas con tu lanyard,
+                            aprendes cloud computing de gente que realmente lo usa en producción, y sales con contactos
+                            y una lista de repos que explorar. El networking ahí no tiene precio.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       CRIPTOGRAFÍA
+  ══════════════════════════════ -->
+    <section id="criptografia" class="section">
+        <div class="container">
+            <header class="s-header">
+                <div class="s-tag"><i class="ph ph-lock-fill"></i> Acerca de</div>
+                <h2>Criptografía <em>&amp; PGP</em></h2>
+            </header>
+
+            <div class="crypto-bento">
+
+                <article class="cbento-card cbento-wide reveal">
+                    <div class="cbento-eyebrow"><i class="ph ph-user-circle-fill"></i> Biografía</div>
+                    <h3>Phil Zimmermann — El padre de PGP</h3>
+                    <p>Philip R. Zimmermann es el programador estadounidense que en <strong>1991</strong> lanzó
+                        <strong>Pretty Good Privacy (PGP)</strong>, el primer sistema de cifrado de llave pública
+                        pensado para el ciudadano común. Activista contra la expansión nuclear desde antes de ser famoso
+                        en tech, Zimmermann quería que cualquier persona pudiera proteger sus comunicaciones, sin
+                        depender de gobiernos ni corporaciones.
+                    </p>
+                    <p>En los 90 fue objeto de una investigación criminal porque publicar PGP equivalía legalmente a
+                        exportar muñición de guerra — el software estaba clasificado como armamento por su potencia de
+                        cifrado (clave de 128 bits cuando el gobierno solo permitía exportar hasta 40 bits). El caso se
+                        archivó en 1996 pero disparó el debate global sobre privacidad digital. Hoy es cofundador de
+                        <em>Silent Circle</em> y referente de la ciberseguridad moderna.
+                    </p>
+                    <div class="cbento-footer">
+                        <span class="ctag">PGP · 1991</span>
+                        <span class="ctag">Silent Circle</span>
+                        <span class="ctag">Crypto Wars</span>
+                    </div>
+                </article>
+
+                <article class="cbento-card reveal">
+                    <div class="cbento-eyebrow"><i class="ph ph-code-block-fill"></i> Algoritmo</div>
+                    <h3>RSA — La factorización que protege internet</h3>
+                    <p>En 1977, <strong>Ron Rivest, Adi Shamir y Leonard Adleman</strong> del MIT publicaron el primer
+                        sistema de cifrado de llave pública práctico. Su base: multiplicar dos primos enormes es
+                        trivial, pero factorizarlos de vuelta tomaría más de la edad del universo con hardware actual.
+                        Sin RSA no hay HTTPS, no hay SSH, no hay tiendas en línea.</p>
+                    <div class="cbento-footer">
+                        <span class="ctag">MIT · 1977</span>
+                        <span class="ctag">Llave pública</span>
+                    </div>
+                </article>
+
+                <article class="cbento-card reveal">
+                    <div class="cbento-eyebrow"><i class="ph ph-warning-octagon-fill"></i> Evento histórico</div>
+                    <h3>Clipper Chip — Cuando el gobierno quiso backdoor en todo</h3>
+                    <p>En 1993, la administración Clinton propuso el <strong>Clipper Chip</strong>: cifrado en hardware
+                        para telefonía, pero con llave maestra guardada por el gobierno. La comunidad criptográfica
+                        respondió publicando vulnerabilidades críticas en el protocolo (Matt Blaze, 1994) hasta enterrar
+                        el proyecto. Esta guerra definió los estándares de privacidad que usamos hoy.</p>
+                    <div class="cbento-footer">
+                        <span class="ctag">1993–1996</span>
+                        <span class="ctag">Crypto Wars</span>
+                    </div>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       CV
+  ══════════════════════════════ -->
+    <section id="cv" class="section section-alt">
+        <div class="container cv-wrap">
+            <header class="s-header">
+                <div class="s-tag"><i class="ph ph-file-pdf-fill"></i> Descarga</div>
+                <h2>Currículum <em>Vitae</em></h2>
+            </header>
+
+            <div class="cv-panel reveal">
+                <div class="cv-panel-left">
+                    <div class="cv-file-icon">
+                        <i class="ph ph-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="cv-panel-right">
+                    <p class="cv-mono">// CV-ARGA.pdf</p>
+                    <h3>Gustavo Adolfo Arreola Rojas</h3>
+                    <p class="cv-desc">Formación académica, proyectos, habilidades técnicas y experiencia relevante.
+                        Actualizado 2025.</p>
+                    <a href="https://drive.google.com/file/d/1fIt02BZfkWZCdfiGwwyT7MqCLH8qUbOQ/view" target="_blank"
+                        class="btn-download">
+                        <i class="ph ph-download-simple"></i>
+                        Ver &amp; Descargar CV
+                    </a>
+                </div>
+                <div class="cv-decoration" aria-hidden="true">PDF</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       LLAVE PÚBLICA PGP
+  ══════════════════════════════ -->
+    <section id="llave" class="section">
+        <div class="container">
+            <header class="s-header">
+                <div class="s-tag"><i class="ph ph-key-fill"></i> Obten</div>
+                <h2>Llave <em>Pública</em></h2>
+            </header>
+
+            <div class="pgp-wrap reveal">
+                <div class="pgp-info">
+                    <i class="ph ph-lock-open-fill pgp-main-icon"></i>
+                    <h3>¿Para qué sirve?</h3>
+                    <p>Usa esta llave para enviarme mensajes cifrados o para verificar mi firma digital.</p>
+                </div>
+                <div class="pgp-block">
+                    <div class="pgp-block-header">
+                        <span><i class="ph ph-terminal"></i> public_key.asc</span>
+                        <button class="pgp-copy-btn" onclick="copyKey()" id="copyBtn">
+                            <i class="ph ph-copy-simple"></i> Copiar
+                        </button>
+                    </div>
+                    <div class="pgp-code" id="pgpKeyContent">
+                        <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+[ Tu llave pública PGP irá aquí ]
+
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="brand-crypto">Criptografía</span>
+                <span class="brand-sep">//</span>
+                <span class="brand-sub">Selected Topics in Cryptography</span>
+            </div>
+            <p class="footer-author">Gustavo Adolfo Arreola Rojas</p>
+            <p class="footer-course">Dra. Nidia A. Cortez Duarte · ESCOM – IPN · 2025</p>
+            <p class="footer-enc"><em class="mono">[ mensaje cifrado con amor y RSA-4096 ]</em></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
