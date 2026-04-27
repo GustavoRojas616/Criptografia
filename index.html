@@ -530,34 +530,42 @@
     <section id="llave" class="section">
         <div class="container">
             <header class="s-header">
-                <div class="s-tag"><i class="ph ph-key-fill"></i> Obten</div>
-                <h2>Llave <em>Pública</em></h2>
+                <div class="s-tag"><i class="ph ph-key-fill"></i> Obtén</div>
+                <h2>Clave Pública <em>ECDH</em></h2>
             </header>
 
             <div class="pgp-wrap reveal">
                 <div class="pgp-info">
                     <i class="ph ph-lock-open-fill pgp-main-icon"></i>
                     <h3>¿Para qué sirve?</h3>
-                    <p>Usa esta llave para enviarme mensajes cifrados o para verificar mi firma digital.</p>
-                    <a href="https://drive.google.com/file/d/1fIt02BZfkWZCdfiGwwyT7MqCLH8qUbOQ/view" target="_blank"
-                        class="btn-download-key">
+                    <p>Esta es mi clave pública generada mediante el protocolo <strong>Elliptic-Curve Diffie-Hellman
+                            (ECDH)</strong>. Corresponde a un punto <em>Q = d·G</em> sobre la curva elíptica utilizada
+                        en la práctica, donde <em>d</em> es mi clave privada secreta.</p>
+                    <p>Cualquiera puede usar este punto público para establecer un secreto compartido conmigo sin
+                        necesidad de intercambiar la clave privada.</p>
+                    <a href="https://drive.google.com/file/d/1rnL3oXDwe-3cW_L5t6aifA7qRiQR0rpU/view?usp=sharing"
+                        target="_blank" class="btn-download-key">
                         <i class="ph ph-download-simple"></i>
-                        Descargar llave pública
+                        Descargar clave pública (.txt)
                     </a>
                 </div>
                 <div class="pgp-block">
                     <div class="pgp-block-header">
-                        <span><i class="ph ph-terminal"></i> public_key.asc</span>
+                        <span><i class="ph ph-terminal"></i> ecdh_public_key.txt</span>
                         <button class="pgp-copy-btn" onclick="copyKey()" id="copyBtn">
                             <i class="ph ph-copy-simple"></i> Copiar
                         </button>
                     </div>
                     <div class="pgp-code" id="pgpKeyContent">
-                        <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+                        <pre>-----BEGIN ECDH PUBLIC KEY-----
 
-[ Tu llave pública PGP irá aquí ]
+Protocolo : Elliptic-Curve Diffie-Hellman (ECDH)
+Punto     : Q = d · G
 
------END PGP PUBLIC KEY BLOCK-----</pre>
+Qx: 99599107556828471674916217406868322394795415217791359635173471761450701078366
+Qy: 43489492944892315181920661557663694651544003230185126676076206483789850934126
+
+-----END ECDH PUBLIC KEY-----</pre>
                     </div>
                 </div>
             </div>
